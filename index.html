@@ -11,174 +11,278 @@
   <base target="_blank">
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLDJT69JDC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GLDJT69JDC');
+  </script>
 </head>
 
 <body>
-  <div class="header">
-    <div class="title">Alexander Brauckmann</div>
-    <div class="subtitle">PhD Candidate in Computer Science</div>
-    <div class="subsubtitle">
-      Hi, I'm Alex, PhD candidatte at University of Edinburgh, advised by <a href="#https://www.dcs.ed.ac.uk/home/mob/">Michael O'Boyle</a>. 
-      <!-- My research bridges compilers program synthesis, and machine learning. -->
-      My work bridges compiler optimization with program synthesis and machine learning.
-  </div>
-  <div class="content">
-    <section>
-      <h1>Education</h1>
-      <ul>
-        <li>
-          <strong>University of Edinburgh</strong>,
-          PhD in Computer Science<br>
-          2022 – Expected late 2025
-        </li>
-        <li>
-          <strong>Technische Universität Dresden</strong>,
-          Diplom (MSc) in Computer Science<br>
-          Graduated 2020<br>
-          <em>Most Outstanding Graduation Thesis Award (Carl Zeiss)</em> 🏆
-        </li>
-      </ul>
-    </section>
+  <div class="website">
+    <a href="./photo.jpg"><img src="./photo.jpg" class="photo"></a>
+      <div class="contact-links">
+         <a href="mailto:a.brauckmann@gmail.com" class="icon-link" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
+         <a href="https://github.com/alexanderb14" class="icon-link" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+         <a href="https://scholar.google.com/citations?user=h7DKhbMAAAAJ&hl=en" class="icon-link" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i> Scholar</a> <!-- Replace with actual link -->
+         <a href="https://www.linkedin.com/in/alexander-brauckmann" class="icon-link" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a> <!-- Replace with actual link -->
+      </div>
 
-    <section>
-      <h1>Work Experience</h1>
-      <ul>
-        <li>
-          <strong>Meta (PyTorch Group)</strong>,
-          Research Scientist Intern<br>
-          Dec 2024 – Mar 2025
-        </li>
-        <li>
-          <strong>AMD (AI Engine Group)</strong>,
-          Deep Learning Compiler Intern<br>
-          Jun 2023 – Sep 2023
-        </li>
-      </ul>
-    </section>
+    <header class="header">
+      <div class="profile-container">
+        <div class="profile-info">
+          <div class="title">Alexander Brauckmann</div>
+          <div class="subtitle">PhD Candidate in Computer Science</div>
+          <div class="subsubtitle">
+            Hi! I am Alex,
+            PhD candidate at the University of Edinburgh, working at the intersection of compilers, machine learning, and program synthesis.
+          </div>
+        </div>
+      </div>
 
-    <section>
-      <h1>Publications</h1>
+    <div class="content">
+      <section>
+        <h1>Education</h1>
+        <table class="pub-table">
+          <tr>
+            <td class="pub-title">
+              <strong>University of Edinburgh</strong><br>
+              PhD in Computer Science,<br>
+              Topic: Tensor Program Synthesis, Advisor: <a href="https://www.dcs.ed.ac.uk/home/mob/" rel="noopener noreferrer">Michael O'Boyle</a>
+            </td>
+            <td class="pub-conference">
+              2022 – 2025
+            </td>
+          </tr>
 
-      <h2>Tensor Program Synthesis</h2>
-
-      <table class="pub-table">
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">Tensorize: Fast Synthesis of Tensor Programs from Legacy Code using Symbolic Tracing, Sketching and Solving</a></strong><br>
-            <b>A. Brauckmann</b>, L. Jaulmes, J. W. de Souza Magalhães, E. Polgreen, M. O'Boyle<br>
-            <em>Distinguished Paper Award</em> 🏆
-          </td>
-          <td class="pub-conference">
-            CGO '25
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">MlirSynth: Automatic, Retargetable Program Raising in Multi-Level IR using Program Synthesis</a></strong><br>
-            <b>A. Brauckmann</b>, E. Polgreen, T. Grosser, M. O'Boyle
-          </td>
-          <td class="pub-conference">
-            PACT '23
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">ExeBench: an ML-scale dataset of executable C functions</a></strong><br>
-            J. Armengol-Estapé, J. Woodruff, <b>A. Brauckmann</b>, J. W. de Souza Magalhães, M. O'Boyle
-          </td>
-          <td class="pub-conference">
-            MAPS '22
-          </td>
-        </tr>
-      </table>
-
-      <h2>Machine Learning Compilers</h2>
-      <table class="pub-table">
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">DFA-Net: A Compiler-Specific Neural Architecture for Robust Generalization in Data Flow Analyses</a></strong><br>
-            <b>A. Brauckmann</b>, A. Faustino da Silva, G. Synnaeve, M. O'Boyle, J. Castrillon, H. Leather
-          </td>
-          <td class="pub-conference">
-            CC '25
-          </td>
-        </tr>
-      
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">Polygym: Polyhedral Optimizations as an Environment for Reinforcement Learning</a></strong><br>
-            <b>A. Brauckmann</b>, A. Goens, J. Castrillon
-          </td>
-          <td class="pub-conference">
-            PACT '21
-          </td>
-        </tr>
-      
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">Compiler-based Graph Representations for Deep Learning Models of Code</a></strong><br>
-            <b>A. Brauckmann</b>, A. Goens, S. Ertel, J. Castrillon
-          </td>
-          <td class="pub-conference">
-            CC '20
-          </td>
-        </tr>
-      
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">ComPy-Learn: A Toolbox for Exploring Machine Learning Representations for Compilers</a></strong><br>
-            <b>A. Brauckmann</b>, A. Goens, J. Castrillon
-          </td>
-          <td class="pub-conference">
-            FDL '20
-          </td>
-        </tr>
-      
-        <tr>
-          <td class="pub-title">
-            <strong><a href="#">A Case Study on Machine Learning for Synthesizing Benchmarks</a></strong><br>
-            A. Goens, <b>A. Brauckmann</b>, S. Ertel, C. Cummins, H. Leather, J. Castrillon
-          </td>
-          <td class="pub-conference">
-            MAPS@PLDI '19
-          </td>
-        </tr>
-      </table>
-    </section>
-
-    <section>
-      <h1>Skills</h1>
-
-      <table>
-        <tr>
-            <th>Programming</th>
-            <td>C, C++, Python, Triton</td>
-        </tr>
-        <tr>
-            <th>Compilers</th>
-            <td>JAX, MLIR, PyTorch</td>
-        </tr>
-        <tr>
-            <th>Machine Learning</th>
-            <td>Transformer Models, Graph Neural Network Models, Performance Profiling</td>
-        </tr>
-        <tr>
-            <th>Other</th>
-            <td>Linux, Git, Scrum, Table Tennis</td>
-        </tr>
-    </table>
-
+          <tr>
+            <td class="pub-title">
+              <strong>Technische Universität Dresden</strong><br>
+              Diplom (MSc) in Computer Science<br>
+              <em>Most Outstanding Thesis Award</em> 🏆
+            </td>
+            <td class="pub-conference">
+              2020
+            </td>
+          </tr>
+        </table>
       </section>
 
-    </section>
+      <section>
+        <h1>Work Experience</h1>
+        <table class="pub-table">
+          <tr>
+            <td class="pub-title">
+              <strong>Meta (PyTorch Group)</strong><br>
+              Research Scientist Intern
+            </td>
+            <td class="pub-conference">
+              Dec 2024 – Apr 2025
+            </td>
+          </tr>
 
+          <tr>
+            <td class="pub-title">
+              <strong>AMD (AI Engine Group)</strong><br>
+              Deep Learning Compiler Intern
+            </td>
+            <td class="pub-conference">
+              Jun 2023 – Sep 2023
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h1>Software</h1>
+        <table class="pub-table">
+          <tr>
+            <td class="pub-title">
+              <strong>Tensorize</strong><br>
+              Program synthesis based tensor compiler, achieving avg. 4.1x speedup by lifting code to PyTorch, JAX and HLO.
+              Novel top-down program synthesis algorithm with near linear scalability.
+              <a href="https://github.com/alexanderb14/tensorize">Code</a><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="pub-title">
+              <strong>MLIR Synth</strong><br>
+              MLIR program synthesizer, synthesizes equivalent programs in high-level MLIR dialects, like LinAlg and HLO.
+              <a href="https://github.com/alexanderb14/mlirSynth">Code</a><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="pub-title">
+              <strong>PolyGym</strong><br>
+              Exploring valid loop transformations in polyhedral model with reinforcement learning, finding schedules with avg. 1.83x speedup over Polly/ISL.
+              <a href="https://github.com/PolyGym/polygym">Code</a><br>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h1>Publications</h1>
+    
+        <table class="pub-table">
+            <tr>
+                <td class="pub-title">
+                    <strong>Tensorize: Fast Synthesis of Tensor Programs from Legacy Code using Symbolic Tracing, Sketching and
+                        Solving.</strong><br>
+                    <u>A. Brauckmann</u>, L. Jaulmes, J. W. de Souza Magalhães, E. Polgreen, M. O'Boyle<br>
+                    <em>Distinguished Paper Award</em> 🏆<br>
+                    <a href="https://dl.acm.org/doi/10.1145/3696443.3708956">Paper</a>,
+                    <a href="https://github.com/alexanderb14/tensorize">Code</a>
+                </td>
+                <td class="pub-conference">
+                    CGO '25
+                </td>
+            </tr>
+
+            <tr>
+                <td class="pub-title">
+                    <strong>Guided Tensor Lifting.</strong><br>
+                    Y. Li, J. W. de Souza Magalhães, <u>A. Brauckmann</u>, M. O'Boyle, E. Polgreen<br>
+                </td>
+                <td class="pub-conference">
+                    PLDI '25
+                </td>
+            </tr>
+ 
+            <tr>
+                <td class="pub-title">
+                    <strong>DFA-Net: A Compiler-Specific Neural Architecture for Robust Generalization in Data Flow Analyses.</strong><br>
+                    <u>A. Brauckmann</u>, A. Faustino da Silva, G. Synnaeve, M. O'Boyle, J. Castrillon, H. Leather<br>
+                    <a href="https://dl.acm.org/doi/10.1145/3708493.3712687">Paper</a>,
+                    <a href="https://zenodo.org/records/14670956">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    CC '25
+                </td>
+            </tr>
+    
+            <tr>
+                <td class="pub-title">
+                    <strong>MlirSynth: Automatic, Retargetable Program Raising in Multi-Level IR using Program Synthesis.</strong><br>
+                    <u>A. Brauckmann</u>, E. Polgreen, T. Grosser, M. O'Boyle<br>
+                    <a href="https://ieeexplore.ieee.org/document/10364593">Paper</a>,
+                    <a href="https://github.com/alexanderb14/mlirSynth">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    PACT '23
+                </td>
+            </tr>
+
+            <tr>
+                <td class="pub-title">
+                    <strong>Rewriting History: Repurposing Domain-Specific CGRAs.</strong><br>
+                    J. Woodruff, T. Koehler, <u>A. Brauckmann</u>, Chris Cummins, Sam Ainsworth, M. O'Boyle<br>
+                    <a href="https://arxiv.org/pdf/2309.09112">Paper</a>,
+                    <a href="https://github.com/j-c-w/CGRA-Mapper">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    arXiv '23
+                </td>
+            </tr>
+    
+            <tr>
+                <td class="pub-title">
+                    <strong>ExeBench: an ML-scale dataset of executable C functions.</strong><br>
+                    J. Armengol-Estapé, J. Woodruff, <u>A. Brauckmann</u>, J. W. de Souza Magalhães, M. O'Boyle<br>
+                    <a href="https://dl.acm.org/doi/10.1145/3520312.3534867">Paper</a>,
+                    <a href="https://github.com/jordiae/exebench">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    MAPS '22
+                </td>
+            </tr>
+    
+            <tr>
+                <td class="pub-title">
+                    <strong>Polygym: Polyhedral Optimizations as an Environment for Reinforcement Learning.</strong><br>
+                    <u>A. Brauckmann</u>, A. Goens, J. Castrillon<br>
+                    <a href="https://ieeexplore.ieee.org/document/9563041">Paper</a>,
+                    <a href="https://github.com/PolyGym/polygym">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    PACT '21
+                </td>
+            </tr>
+    
+            <tr>
+                <td class="pub-title">
+                    <strong>Compiler-based Graph Representations for Deep Learning Models of Code.</strong><br>
+                    <u>A. Brauckmann</u>, A. Goens, S. Ertel, J. Castrillon<br>
+                    <a href="https://dl.acm.org/doi/10.1145/3377555.3377894">Paper</a>,
+                    <a href="https://github.com/tud-ccc/learning-compiler-graphs">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    CC '20
+                </td>
+            </tr>
+    
+            <tr>
+                <td class="pub-title">
+                    <strong>ComPy-Learn: A Toolbox for Exploring Machine Learning Representations for Compilers.</strong><br>
+                    <u>A. Brauckmann</u>, A. Goens, J. Castrillon<br>
+                    <a href="https://ieeexplore.ieee.org/document/9232946">Paper</a>,
+                    <a href="https://github.com/tud-ccc/compy-learn">Code</a><br>
+                </td>
+                <td class="pub-conference">
+                    FDL '20
+                </td>
+            </tr>
+    
+            <tr>
+                <td class="pub-title">
+                    <strong>A Case Study on Machine Learning for Synthesizing Benchmarks.</strong><br>
+                    A. Goens, <u>A. Brauckmann</u>, S. Ertel, C. Cummins, H. Leather, J. Castrillon<br>
+                    <a href="https://dl.acm.org/doi/10.1145/3315508.3329976">Paper</a><br>
+                </td>
+                <td class="pub-conference">
+                    MAPS '19
+                </td>
+            </tr>
+        </table>
+    </section> 
+
+
+      <section>
+        <h1>Skills</h1>
+        <table>
+          <tr>
+            <th>Programming</th>
+            <td>C, C++, Python</td>
+          </tr>
+          <tr>
+            <th>Compilers</th>
+            <td>JAX, MLIR, PyTorch</td>
+          </tr>
+          <tr>
+            <th>Machine Learning</th>
+            <td>Transformer Models, Graph Neural Network Models, Performance Profiling</td>
+          </tr>
+          <tr>
+            <th>Other</th>
+            <td>Linux, Git, Scrum, Table Tennis</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <!-- Use dynamic year -->
+      <p>© <span id="copyright-year">2024</span> Alexander Brauckmann</p>
+
+      <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+    </footer>
   </div>
-
-  <footer class="footer">
-    <p>Alexander Brauckmann, 2025</p>
-  </footer>
 </body>
 
 </html>
