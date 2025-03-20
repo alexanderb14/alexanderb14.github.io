@@ -19,14 +19,17 @@
   
   .subtitle {
     margin-top: 6pt;
-    max-width: 550pt;
     font-size: 15pt;
   }
   .subsubtitle {
     margin-top: 6pt;
-    max-width: 550pt;
     font-size: 12pt;
     line-height: 125%;
+  }
+
+  .website {
+    max-width: 700px;
+    margin: 0 auto;
   }
   
   .content {
@@ -86,8 +89,6 @@
     margin-bottom: 6pt;
     color: #000000;
   }
-  section li > a:first-of-type {
-  }
   
   a {
     color: #2B265E;
@@ -97,25 +98,6 @@
   
   a:hover {
     border-bottom: 2px solid #000000;
-  }
-  
-  img.photo {
-      max-width: 15%;
-      max-height: 15%;
-      float: right;
-      margin: 0 0 5px 5px;
-      border-radius: 50%;
-  }
-  
-  @media(max-width:600pt) {
-    body {
-      padding-left: 2%;
-      padding-right: 2%
-    }
-    img.photo {
-      max-width: 30%;
-      max-height: 30%;
-    }
   }
 
 th, td {
