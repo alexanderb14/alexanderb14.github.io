@@ -1,0 +1,127 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+  
+  html {
+    font-family: "Helvetica Neue";
+  }
+  
+  body {
+    padding-left: 15%;
+    padding-right: 15%
+  }
+  
+  .title {
+    margin-top: 50pt;
+    font-size: 20pt;
+  }
+  
+  .subtitle {
+    margin-top: 6pt;
+    max-width: 550pt;
+    font-size: 15pt;
+  }
+  .subsubtitle {
+    margin-top: 6pt;
+    max-width: 550pt;
+    font-size: 12pt;
+    line-height: 125%;
+  }
+  
+  .content {
+    margin-top: 30pt;
+  }
+
+  .pub-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .pub-table td {
+    vertical-align: top;
+    padding: 8px;
+  }
+
+  .pub-title {
+    text-align: left;
+  }
+
+  .pub-conference {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  section {
+    margin-top: 20pt;
+  }
+  
+  section h1 {
+    font-weight: initial;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 3px;
+    line-height: 10pt;
+    margin-bottom: 5pt;
+  }
+
+  section h2 {
+    font-weight: initial;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 3px;
+    line-height: 10pt;
+    margin-bottom: 5pt;
+  }
+  
+  section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  section li {
+    font-size: 12pt;
+    margin-bottom: 6pt;
+    color: #000000;
+  }
+  section li > a:first-of-type {
+  }
+  
+  a {
+    color: #2B265E;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    border-bottom: 2px solid #000000;
+  }
+  
+  img.photo {
+      max-width: 15%;
+      max-height: 15%;
+      float: right;
+      margin: 0 0 5px 5px;
+      border-radius: 50%;
+  }
+  
+  @media(max-width:600pt) {
+    body {
+      padding-left: 2%;
+      padding-right: 2%
+    }
+    img.photo {
+      max-width: 30%;
+      max-height: 30%;
+    }
+  }
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    width: 25%;
+}
